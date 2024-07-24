@@ -1,0 +1,98 @@
+[
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/cluster.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/cluster.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/cluster.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/cluster.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/direct.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/direct.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/direct.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/direct.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/direct_tree.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/direct_tree.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/direct_tree.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/direct_tree.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/ifgt.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/ifgt.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/ifgt.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/ifgt.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/openmp.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/openmp.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/openmp.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/openmp.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/transform.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/transform.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/transform.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/transform.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/src/cluster-sequential.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/cluster-sequential.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src/cluster-sequential.cpp",
+  "output": "CMakeFiles/Library-C++.dir/src/cluster-sequential.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -DLibrary_C___EXPORTS -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/nanoflann-1.1.9/include -I/opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -fPIC -Wall -pedantic -Wno-nested-anon-types -o CMakeFiles/Library-C++.dir/version.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build/version.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build/version.cpp",
+  "output": "CMakeFiles/Library-C++.dir/version.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1  -DGTEST_HAS_PTHREAD=1   -o vendor/googletest-1.14.0/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/src/gtest-all.cc",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/src/gtest-all.cc",
+  "output": "vendor/googletest-1.14.0/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1  -DGTEST_HAS_PTHREAD=1   -o vendor/googletest-1.14.0/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/src/gtest_main.cc",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/src/gtest_main.cc",
+  "output": "vendor/googletest-1.14.0/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build -I/opt/homebrew/include/eigen3 -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -o test/CMakeFiles/cluster.dir/cluster_test.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/cluster_test.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/cluster_test.cpp",
+  "output": "test/CMakeFiles/cluster.dir/cluster_test.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build -I/opt/homebrew/include/eigen3 -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -o test/CMakeFiles/direct.dir/direct_test.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/direct_test.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/direct_test.cpp",
+  "output": "test/CMakeFiles/direct.dir/direct_test.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build -I/opt/homebrew/include/eigen3 -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -o test/CMakeFiles/direct-tree.dir/direct_tree_test.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/direct_tree_test.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/direct_tree_test.cpp",
+  "output": "test/CMakeFiles/direct-tree.dir/direct_tree_test.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build -I/opt/homebrew/include/eigen3 -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -o test/CMakeFiles/ifgt.dir/ifgt_test.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/ifgt_test.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/ifgt_test.cpp",
+  "output": "test/CMakeFiles/ifgt.dir/ifgt_test.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build -I/opt/homebrew/include/eigen3 -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -o test/CMakeFiles/version.dir/version_test.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/version_test.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/version_test.cpp",
+  "output": "test/CMakeFiles/version.dir/version_test.cpp.o"
+},
+{
+  "directory": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+  "command": "/usr/bin/clang++ -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/include -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/src -I/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build -I/opt/homebrew/include/eigen3 -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest/include -isystem /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/vendor/googletest-1.14.0/googletest -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -o test/CMakeFiles/without_openmp.dir/without_openmp_test.cpp.o -c /Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/without_openmp_test.cpp",
+  "file": "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt/test/without_openmp_test.cpp",
+  "output": "test/CMakeFiles/without_openmp.dir/without_openmp_test.cpp.o"
+}
+]

@@ -1,0 +1,191 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a04cc3185869c06b513b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4
+					]
+				},
+				{
+					"build" : "vendor/googletest-1.14.0/googletest",
+					"jsonFile" : "directory-vendor.googletest-1.14.0.googletest-Debug-b95fb46429eec11038f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "vendor/googletest-1.14.0/googletest",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "fgt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Library-C++::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Library-C++-Debug-692b1501ec17c3092590.json",
+					"name" : "Library-C++",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cluster::@36f028580bb02cc8272a",
+					"jsonFile" : "target-cluster-Debug-1b89ee9093b62f71e43e.json",
+					"name" : "cluster",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "direct::@36f028580bb02cc8272a",
+					"jsonFile" : "target-direct-Debug-8007f71eabc35172bbb2.json",
+					"name" : "direct",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "direct-tree::@36f028580bb02cc8272a",
+					"jsonFile" : "target-direct-tree-Debug-cc6a1103782041091311.json",
+					"name" : "direct-tree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "docs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-docs-Debug-593a36b0253da253dd22.json",
+					"name" : "docs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@687538e022a0c3582c46",
+					"jsonFile" : "target-gtest-Debug-3ddeeb9da5d86a037d18.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@687538e022a0c3582c46",
+					"jsonFile" : "target-gtest_main-Debug-60b2875d10c6cde5046d.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ifgt::@36f028580bb02cc8272a",
+					"jsonFile" : "target-ifgt-Debug-73592594a0b2460d530c.json",
+					"name" : "ifgt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "version::@36f028580bb02cc8272a",
+					"jsonFile" : "target-version-Debug-caa5bffa4d7b72fa9a37.json",
+					"name" : "version",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "without_openmp::@36f028580bb02cc8272a",
+					"jsonFile" : "target-without_openmp-Debug-9b90fc64532ec40f18f2.json",
+					"name" : "without_openmp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/build",
+		"source" : "/Users/leonma/Desktop/sample_continuation/fast_gauss_transform/fgt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
