@@ -85,8 +85,34 @@ double accuracy(const std::string& mode, double bandwidth, double epsilon, const
     } else {
         throw std::invalid_argument("Invalid mode: " + mode);
     }
-    return (expected - actual).array().abs().maxCoeff() / actual.size();
+    return (expected - actual).array().abs().maxCoeff();
 }
+
+std::pair<double,double> timer_and_accuracy(const std::string& mode, double bandwidth, double epsilon, const fgt::Matrix &points) {
+    auto expected = fgt::direct(points, points, bandwidth);
+    Eigen::MatrixXd actual; 
+
+    auto tic = std::chrono::high_resolution_clock::now();
+    if (mode == "direct") {
+        actual = fgt::direct(points, points, bandwidth);
+    } else if (mode == "direct_tree") {
+        actual = fgt::direct_tree(points, points, bandwidth, epsilon);
+    } else if (mode == "ifgt") {
+        actual = fgt::ifgt(points, points, bandwidth, epsilon);
+    } else {
+        throw std::invalid_argument("Invalid mode: " + mode);
+    }
+    auto toc = std::chrono::high_resolution_clock::now();
+
+    auto runtime = toc - tic;
+    double res_runtime = double(std::chrono::duration_cast<std::chrono::microseconds>(
+                            runtime)
+                            .count()) * 1e-6f;
+
+    double true_error = (expected - actual).array().abs().maxCoeff();
+    return std::make_pair(res_runtime, true_error);
+}
+
 
 std::vector<std::vector<double>> bench_bandwidth(std::vector<double> bandwidths, double epsilon, const std::string& filename) {
     //Returns 2D vector with the following format
@@ -145,6 +171,26 @@ std::vector<std::vector<double>> bench_accuracy(double bandwidth, std::vector<do
     return output;
 }
 
+std::vector<std::vector<double>> bench_error_and_accuracy(double bandwidth, std::vector<double> epsilons, const std::string& filename) {
+    fgt::Matrix x = load_ascii_test_matrix(filename);
+
+    std::array<std::string, 2> modes = {"direct_tree", "ifgt"};
+    std::vector<std::vector<double>> output;
+
+    for (auto& epsilon : epsilons) {
+        std::vector<double> res_error_and_accuracy;
+        for (auto& mode : modes) {
+            for (int i = 0; i < niter; i++) {
+                std::pair<double,double> res = timer_and_accuracy(mode, bandwidth, epsilon, x);
+                res_error_and_accuracy.push_back(res.first);
+                res_error_and_accuracy.push_back(res.second);
+            }
+        }
+        output.push_back(res_error_and_accuracy);
+    }
+    return output;
+}
+
 
 
 PYBIND11_MODULE(fgt_main, m) {
@@ -152,10 +198,14 @@ PYBIND11_MODULE(fgt_main, m) {
           py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
     m.def("accuracy", &accuracy, "Run the FMM and compare approximation to true value",
           py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
+    m.def("timer_and_accuracy", &timer_and_accuracy, "Returns a tuple with the first element as the time to run and the second element as the true accuracy",
+    py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
     m.def("bench_bandwidth", &bench_bandwidth, "Benchmark different bandwidths",
           py::arg("bandwidths"), py::arg("epsilon"), py::arg("filename"));
     m.def("bench_error", &bench_error, "Benchmark different error tolerance",
           py::arg("bandwidth"), py::arg("epsilons"), py::arg("filename"));
     m.def("bench_accuracy", &bench_accuracy, "Benchmark the true error vs the allowed error",
+          py::arg("bandwidth"), py::arg("epsilons"), py::arg("filename"));
+    m.def("bench_error_and_accuracy", &bench_error_and_accuracy, "Composite function that runs both error and accuracy test at once",
           py::arg("bandwidth"), py::arg("epsilons"), py::arg("filename"));
 }
