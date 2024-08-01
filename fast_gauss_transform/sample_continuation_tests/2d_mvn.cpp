@@ -73,6 +73,28 @@ double timer(const std::string& mode, double bandwidth, double epsilon, const fg
     return res;
 }
 
+double timer_row_major(const std::string& mode, double bandwidth, double epsilon, const Eigen::Ref<const fgt::Matrix> &points) {
+
+    // Timing
+    auto tic = std::chrono::high_resolution_clock::now();
+    if (mode == "direct") {
+        fgt::direct(points, points, bandwidth);
+    } else if (mode == "direct_tree") {
+        fgt::direct_tree(points, points, bandwidth, epsilon);
+    } else if (mode == "ifgt") {
+        fgt::ifgt(points, points, bandwidth, epsilon);
+    } else {
+        throw std::invalid_argument("Invalid mode: " + mode);
+    }
+    auto toc = std::chrono::high_resolution_clock::now();
+
+    auto runtime = toc - tic;
+    double res = double(std::chrono::duration_cast<std::chrono::microseconds>(
+                            runtime)
+                            .count()) * 1e-6f;
+    return res;
+}
+
 double accuracy(const std::string& mode, double bandwidth, double epsilon, const fgt::Matrix &points) {
     auto expected = fgt::direct(points, points, bandwidth);
 
@@ -196,10 +218,12 @@ std::vector<std::vector<double>> bench_error_and_accuracy(double bandwidth, std:
 PYBIND11_MODULE(fgt_main, m) {
     m.def("timer", &timer, "Run the FMM and time how long it takes",
           py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
+    m.def("timer_row_major", &timer_row_major, "Run the FMM and time how long it takes except pass numpy array by reference instead of by copy",
+          py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
     m.def("accuracy", &accuracy, "Run the FMM and compare approximation to true value",
           py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
     m.def("timer_and_accuracy", &timer_and_accuracy, "Returns a tuple with the first element as the time to run and the second element as the true accuracy",
-    py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
+          py::arg("mode"), py::arg("bandwidth"), py::arg("epsilon"), py::arg("points"));
     m.def("bench_bandwidth", &bench_bandwidth, "Benchmark different bandwidths",
           py::arg("bandwidths"), py::arg("epsilon"), py::arg("filename"));
     m.def("bench_error", &bench_error, "Benchmark different error tolerance",
